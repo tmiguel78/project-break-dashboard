@@ -1,12 +1,12 @@
 # PROJECT BRAKE 1 - Dashboard
 Bienvenido al primer PROJECT BREAK. Después de varias semanas de duro trabajo vamos a poner en práctica todo lo que has aprendido.
 
-Vas a crear un Dasboard en el que podrás ver 4 elementos:
+Vas a crear un Dashboard en el que podrás ver 4 elementos:
 - Un reloj digital 24h + Fecha
 - Una estación meteorológica
 - Un creador de contraseñas seguras
-- Un listado de links interesántes
-(Además de imagenes random de fondo.)
+- Un listado de links interesantes
+(Además de imágenes random de fondo.)
 
 Cada uno de ellos será independiente entre sí. Se generará una página propia y un script propio. Las CSS también pueden ser propias o generales.
 
@@ -17,13 +17,13 @@ Desde el index se podrá acceder a cada página, y habrá cambios si está dentr
 Aquí puedes ver el ejemplo:
 https://carlosdiazgirol.github.io/dashboard/
 
-Es un ejemplo de como lo puedes hacer pero puedes dar rienda suelta tu imaginación, siempre y cuando cumplas con los objetivos. Simepre puedes añadir más funcionalidades si lo deseas.
+Es un ejemplo de como lo puedes hacer pero puedes dar rienda suelta a tu imaginación, siempre y cuando cumplas con los objetivos. Siempre puedes añadir más funcionalidades si lo deseas.
 
-Una vez tengas el proyecto finalizado, también puede ser antes, lo subiras a github pages para poder verlo en internet. Para poder subir nuestro proyecto a github pages previamente lo tendremos que tener en nuestro repositorio. Una vez ahí iremos a `settings` (está en el menú de cabecera) y dentro aparecerá en el menú lateral `pages`. Clicka y al entrar solo tienes que seleccionar la `branch`(rama) `main`. Y pulsaremos `SAVE`.
+Una vez tengas el proyecto finalizado, también puede ser antes, lo subirás a Github pages para poder verlo en internet. Para poder subir nuestro proyecto a github pages previamente lo tendremos que tener en nuestro repositorio. Una vez ahí iremos a `settings` (está en el menú de cabecera) y dentro aparecerá en el menú lateral `pages`. Clicka y al entrar solo tienes que seleccionar la `branch`(rama) `main`. Y pulsaremos `SAVE`.
 Esperaremos un par de minutos, refrescaremos esa página y nos dará una URL. Ahí podras ver tu proyecto en internet.
 
 
-Vamos a ver que hay que hacer en cada uno de los proyectos: 
+Vamos a ver qué hay que hacer en cada uno de los proyectos: 
 
 ## Reloj digital 24h + Fecha:
 
@@ -45,9 +45,9 @@ Un reloj digital con la fecha y hora actual del lugar en el que te encuentres. T
 - Dale estilo con CSS
 
 ### ¿Qué usaremos?
-- `new Date()` Es el objeto que representa la fecha y hora. Tiene varios métodos que nos ayudará a abtener lo que necesitamos:
+- `new Date()` Es el objeto que representa la fecha y hora. Tiene varios métodos que nos ayudará a obtener lo que necesitamos:
   - Hora, minutos y segundos
-  - Día, mes año
+  - Día, mes y año
 - La hora debe actualizarse sola, es decir que si cambia la hora, el minuto o el segundo deben cambiar automaticamente en pantalla. Piensa en la unidad mínima que se necesita para hacer ese cambio. La fecha también debe cambiar. Para esto podemos usar `setInterval()`
 - Necesitaremos condicionales para las frases. Dependiendo la hora saldrá una u otra
 
