@@ -16,10 +16,9 @@ const arrBackgroundImages = [
 
 const setBackgroundImage = () => {
     let indiceImagen = Math.floor(Math.random() * arrBackgroundImages.length);
-    const baseURL = window.location.origin + window.location.pathname;
-    document.body.style.backgroundImage = `url(${baseURL}assets/backgroundImages/${arrBackgroundImages[indiceImagen]})`;
-    
+    document.body.style.backgroundImage = `url(./assets/backgroundImages/${arrBackgroundImages[indiceImagen]})`;
 };
+
 setBackgroundImage();
 
 setInterval(() => {
