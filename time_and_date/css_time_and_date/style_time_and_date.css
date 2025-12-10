@@ -39,32 +39,58 @@ table {
 	border-spacing: 0; 
 }
 /* END RESET CSS*/
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-h1 {
+
+
+
+.titulo_hora_y_fecha {
     font-family: "Science Gothic", sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    margin: 20px;
+    margin: 20px 110px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(227, 151, 38, 0.801);
+    padding: 10px;
 }
-#timeDate {
-    
+.container_time_and_date {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-size: cover;
+}
+
+.home_time_and_date {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-family: "Science Gothic", sans-serif;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(227, 151, 38, 0.801);
+    padding: 10px;
+    color: black;
+}
+#timeDate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 10px;
     font-family: "Science Gothic", sans-serif;
     padding: 20px;
+    width: 450px;
     border: 2px solid black;
-    border-radius: 10px;
-    width: 500px;
+    border-radius: 20px;
+    background-color: rgba(227, 151, 38, 0.801);
+    box-shadow: 5px 5px 10px grey;
 }
 #timeArea {
+    position: relative;
+    left: -15px;
     width: 180px;
     font-size: 40px;
 }

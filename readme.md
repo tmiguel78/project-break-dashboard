@@ -74,7 +74,7 @@ Crea una página que tendrá lo siguiente:
 - Símbolos "!@#$%^&*()-_=+"
 
 ### PISTAS Y CONSEJOS
-- Guarda cada uno de los datos (mayúsculas, minúsculas, símbolos y núemeros) en una variable para poder recorrerlos.
+- Guarda cada uno de los datos (mayúsculas, minúsculas, símbolos y números) en una variable para poder recorrerlos.
 - Usa bucles y condicionales
 
 ## Listado de links:
@@ -128,7 +128,7 @@ Todas las páginas de tu proyecto tendrán una imagen random de background. Camb
 
 ### ¿Qué usaremos? 
 - `Math.random()` para generar aleatoriedad
-- En esta página `https://unsplash.com/es` podrás sacar imagenes de calidad de manera gratuíta. Puedes elegir otras páginas sin problema. O directamente desde goolge. Usa 10 minagenes mínimo para darle más dinamismo
+- En esta página `https://unsplash.com/es` podrás sacar imagenes de calidad de manera gratuita. Puedes elegir otras páginas sin problema. O directamente desde google. Usa 10 minagenes mínimo para darle más dinamismo
 - Estilos en línea que añadiremos con JS. 
   - Este puede ser un ejemplo: `document.body.style.backgroundImage = "url('mi-imagen.jpg')"`;
 - `setInterval` para darle ese tiempo de cambio

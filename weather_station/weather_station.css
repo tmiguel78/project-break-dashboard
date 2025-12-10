@@ -41,28 +41,74 @@ table {
 /* END CSS */
 
 
-h1 {
+.titulo_weather {
     font-family: "Science Gothic", sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     margin: 20px;
-}
 
-p {
-    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(227, 151, 38, 0.801);
+    padding: 10px;
+    width: 250px;
 }
 
 p img {
     width: 40px;
 }
 
-ul li {
+.elemento_lista_prediccion {
     margin: 10px;
     font-size: 16px;
-}
+    background-color: rgb(183, 194, 219);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
 
+
+}
+.grados_celsius {
+    font-size: 40px;
+}
+.container_weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-size: cover;
+}
+.home_weather {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    font-family: "Science Gothic", sans-serif;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(227, 151, 38, 0.801);
+    padding: 10px;
+    color: black;
+}
+.currentweather {
+    display: flex;
+    gap: 20px;
+}
 .datos_secundarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 30px;
+    background-color: rgb(183, 194, 219);
+    margin: 10px;
+    padding: 10px;
+    font-family: "Science Gothic", sans-serif;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.795);
     font-weight: lighter;
@@ -74,12 +120,11 @@ ul li {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    margin: 20px;
     padding: 20px;
     width: 400px;
     border: 2px solid black;
     border-radius: 20px;
-    background-color: rgba(227, 151, 38, 0.418);
+    background-color: rgba(227, 151, 38, 0.801);
     box-shadow: 5px 5px 10px grey;
 }
 
@@ -91,6 +136,7 @@ ul li {
     display: flex;
     overflow: scroll;
 }
+
 
 #forecastWeather li p {
     font-size: 16px;

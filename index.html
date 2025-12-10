@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./time_and_date/css_time_and_date/style_time_and_date.css">
+    <link rel="stylesheet" href="./weather_station/weather_station.css">
+    <link rel="stylesheet" href="./contraseña/contraseña.css">
+    <link rel="stylesheet" href="./links/links.css">
 </head>
 <body>
+    <div class="contenido_body">
+        <section class="seccion_hora_y_fecha">
+            <h1 class="titulo_hora_y_fecha">Hora y fecha</h1>
+            <div id="timeDate">
+                <div id="timeArea"></div>
+                <div id="dateArea"></div>
+                <div id="sentenceArea"></div>
+            </div>
+        </section>
+        <section>
+            <h1 class="titulo_contraseña">Genera tu contraseña segura</h1>
+            <form class="formulario">
+                <label for="contraseña">Número de caracteres de la contraseña: (entre 12 y 50) </label>
+                <input type="number" name="numero_caracteres" id="numero_caracteres" min="12" max="50">
+                <input type="button" value="Generar contraseña" id="btn_contraseña">
+                <p>Tu contraseña es:</p>
+                <p id="resultado_contraseña"></p>
+            </form>
+        </section>
+        <section class="el_tiempo">
+            <h1 class="titulo_weather">El tiempo</h1>
+            <div id="weather">
+                <div id="currentWeather">
+                </div>
+                <div>
+                    <ul id="forecastWeather">
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container_links">
+                <h1 class="titulo_links">Añade tu enlace de interés</h1>
+                <input type="text" class="input" id="input_nombre" placeholder="Nombre de tu enlace">
+                <input type="text" class="input" id="input_link" placeholder="Pega aquí tu URL">
+                <button class="input" id="btn_links">Añadir enlace</button>
+                <div>
+                    <ul id="lista_enlaces">
 
-    <script src=""></script>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer style="display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    margin: 20px; 
+                    border: 2px solid black;
+                    border-radius: 20px;
+                    background-color: rgba(227, 151, 38, 0.801);
+                    padding: 10px;
+                    width: 300px;
+                    height: 50px;"> <!--He puesto el estilo en línea porque en las CSS no había manera de que me lo colocara bien. Por algún motivo, no me reconocía el flex ni me hacía nada.-->
+        <a href="./time_and_date/time_and_date.html"><img src="./assets/reloj.png" alt="Enlace a hora y fecha" /></a>
+        <a href="./contraseña/contraseña.html"><img src="./assets/candado.png" alt="Enlace a crear contraseña" /></a>
+        <a href="./weather_station/weather_station.html"><img src="./assets/nube.png" alt="Enlace a estación meteorológica" /></a>
+        <a href="./links/links.html"><img src="./assets/enlace.png" alt="Enlace a links favoritos" /></a>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./time_and_date/js_time_and_date/script_time_and_date.js"></script>
+    <script type="module" src="./weather_station/weather_station.js"></script>
+    <script type="module" src="./contraseña/contraseña.js"></script>
+    <script type="module" src="./links/links.js"></script>
 </body>
 </html>

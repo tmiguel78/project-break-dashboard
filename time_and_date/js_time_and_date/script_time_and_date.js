@@ -7,8 +7,8 @@
 
 
 const timeDateArea = document.getElementById('timeDate');
-const timeArea = document.getElementById('timeArea');
-const dateArea = document.getElementById('dateArea');
+const timeArea     = document.getElementById('timeArea');
+const dateArea     = document.getElementById('dateArea');
 const sentenceArea = document.getElementById('sentenceArea');
 
 // Función para actualizar la hora cada segundo.
@@ -20,7 +20,7 @@ function updateTimeDate () {
 
         let year  = today.getFullYear(),
         month     = today.getMonth() + 1,
-        day       = today.getUTCDay(),
+        day       = today.getDate(),
         hour      = today.getHours(),
         minute    = today.getMinutes(),
         second    = today.getSeconds()
@@ -38,8 +38,8 @@ function updateTimeDate () {
         hour < 10 ? hour     = '0' + today.getHours() : null
         minute < 10 ? minute = '0' + today.getMinutes() : null
         second < 10 ? second = '0' + today.getSeconds() : null
-        day < 10 ? day       = '0' + today.getUTCDay() : null
-        month < 10 ? month   = '0' + today.getUTCMonth() +1 : null
+        day < 10 ? day       = '0' + today.getDate() : null
+        month < 10 ? month   = '0' + today.getMonth() +1 : null
 
     const timeTogether = `${hour}:${minute}:${second}`;
     const dateTogether = `${day}/${month}/${year}`;
@@ -51,4 +51,33 @@ function updateTimeDate () {
 };
 
 updateTimeDate();
+
+// Función para imágenes de fondo aleatorias
+
+const arrBackgroundImages = [
+    "annie-spratt-FqrMFfB68Zw-unsplash.jpg",
+    "eduard-pretsi-TMHcn_Of3sM-unsplash.jpg",
+    "garvit-nama-QZEJr62IF_Y-unsplash.jpg",
+    "jasper-kijk-in-de-vegte-MKI9Fj52Dao-unsplash.jpg",
+    "liana-s---cZAZixQ-Y-unsplash.jpg",
+    "mariola-grobelska-gskBnSDkoFY-unsplash.jpg",
+    "pawel-czerwinski-VXMCJNvOgKM-unsplash.jpg",
+    "pawel-czerwinski-ZtdaEYBAWHs-unsplash.jpg",
+    "peter-muscutt-vPG4C-hbACo-unsplash.jpg",
+    "red-zeppelin-xHpyGeeNsAs-unsplash.jpg",
+    "zoha-gohar-WWlDskG5mY8-unsplash.jpg"
+]
+
+const setBackgroundImage = () => {
+    let indiceImagen = Math.floor(Math.random() * arrBackgroundImages.length);
+    document.body.style.backgroundImage = `url(../assets/backgroundImages/${arrBackgroundImages[indiceImagen]})`;
+    
+};
+setBackgroundImage();
+
+setInterval(() => {
+    setBackgroundImage()
+}, 15000);
+
+
 
