@@ -1,4 +1,5 @@
 // Función para imágenes de fondo
+
 const arrBackgroundImages = [
     "annie-spratt-FqrMFfB68Zw-unsplash.jpg",
     "eduard-pretsi-TMHcn_Of3sM-unsplash.jpg",
@@ -15,7 +16,7 @@ const arrBackgroundImages = [
 
 const setBackgroundImage = () => {
     let indiceImagen = Math.floor(Math.random() * arrBackgroundImages.length);
-    document.body.style.backgroundImage = `url(/assets/backgroundImages/${arrBackgroundImages[indiceImagen]})`;
+    document.body.style.backgroundImage = `url(./assets/backgroundImages/${arrBackgroundImages[indiceImagen]})`;
     
 };
 setBackgroundImage();
