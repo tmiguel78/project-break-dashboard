@@ -15,7 +15,7 @@ const arrBackgroundImages = [
 
 const setBackgroundImage = () => {
     let indiceImagen = Math.floor(Math.random() * arrBackgroundImages.length);
-    document.body.style.backgroundImage = `url(./assets/backgroundImages/${arrBackgroundImages[indiceImagen]})`;
+    document.body.style.backgroundImage = `url(https://github.com/tmiguel78/project-break-dashboard/blob/main/assets/backgroundImages/${arrBackgroundImages[indiceImagen]})`;
     
 };
 setBackgroundImage();
