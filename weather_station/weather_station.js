@@ -48,7 +48,7 @@ const template = (data) => {
         <h2>${city}, ${country}</h2>
         <h2>${condition}</h2>
         <img src="${imagen}" alt="${condition}" id="imagen_actual"/>
-        <p class="grados_celsius">${grados_celsius}º <img src="../assets/termometro.png" alt="Termómetro" /></p>
+        <p class="grados_celsius">${grados_celsius}º <img src="https://tmiguel78.github.io/project-break-dashboard/assets/termometro.png" alt="Termómetro" /></p>
         <ul>
             <li class="datos_secundarios">Precipitaciones: ${precipitaciones} mm</li>
             <li class="datos_secundarios">Humedad: ${humedad} %</li>
