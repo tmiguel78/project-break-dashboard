@@ -106,6 +106,7 @@ const setBackgroundImage = () => {
     document.body.style.backgroundImage = `url(../assets/backgroundImages/${arrBackgroundImages[indiceImagen]})`;
     
 };
+
 setBackgroundImage();
 
 setInterval(() => {
