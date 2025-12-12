@@ -1,3 +1,5 @@
+// Codigo para imagenes de fondo a exportar a todos los .js
+
 export const arrBackgroundImages = [
     "annie-spratt-FqrMFfB68Zw-unsplash.jpg",
     "eduard-pretsi-TMHcn_Of3sM-unsplash.jpg",
