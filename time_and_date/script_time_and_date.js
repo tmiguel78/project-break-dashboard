@@ -78,6 +78,3 @@ setBackgroundImage();
 setInterval(() => {
     setBackgroundImage()
 }, 15000);
-
-
-

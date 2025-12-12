@@ -61,6 +61,8 @@ btn_contraseña.addEventListener('click', () => {
 });
 
 // Función para imágenes de fondo
+
+
 const arrBackgroundImages = [
     "annie-spratt-FqrMFfB68Zw-unsplash.jpg",
     "eduard-pretsi-TMHcn_Of3sM-unsplash.jpg",

@@ -23,7 +23,7 @@
         <section>
             <h1 class="titulo_contraseña">Genera tu contraseña segura</h1>
             <form class="formulario">
-                <label for="contraseña">Número de caracteres de la contraseña: (entre 12 y 50) </label>
+                <label for="numero_caracteres">Número de caracteres de la contraseña: (entre 12 y 50) </label>
                 <input type="number" name="numero_caracteres" id="numero_caracteres" min="12" max="50">
                 <input type="button" value="Generar contraseña" id="btn_contraseña">
                 <p>Tu contraseña es:</p>
@@ -71,10 +71,10 @@
         <a href="../weather_station/weather_station.html"><img src="../assets/nube.png" alt="Enlace a estación meteorológica" /></a>
         <a href="../links/links.html"><img src="../assets/enlace.png" alt="Enlace a links favoritos" /></a>
     </footer>
-    <!-- <script src="./js/script.js"></script> -->
-    <script src="../time_and_date/script_time_and_date.js"></script>
+    
+    <script type="module" src="../time_and_date/script_time_and_date.js"></script>
     <script type="module" src="../weather_station/weather_station.js"></script>
-    <script src="../contraseña/contraseña.js"></script>
+    <script type="module" src="../contraseña/contraseña.js"></script>
     <script src="../links/links.js"></script>
 </body>
 </html>
