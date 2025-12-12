@@ -57,7 +57,7 @@ const borrarLinks = (indiceBorrar) => {
     renderLinks();
 };
 
-// window.borrarLinks = borrarLinks;
+window.borrarLinks = borrarLinks;
 
 // Función para imágenes de fondo
 
