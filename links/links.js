@@ -27,11 +27,20 @@ const renderLinks = () => {
         lista_enlaces.innerHTML += `
         <li class="links">
         <a href="${links[i].url}" target="_blank">${links[i].nombre}</a>
-        <button onclick="borrarLinks(${i})">X</button>
+        <button class="btn-borrar" data-index="${i}">X</button>
         </li>
         `
     }
+    const botonesBorrar = document.querySelectorAll('.btn-borrar');
+    botonesBorrar.forEach(boton => {
+        boton.addEventListener('click', (e) => {
+            const index = parseInt(e.target.dataset.index);
+            borrarLinks(index);
+        });
+    });
 };
+
+
 
 // Evento para el boton
 
@@ -44,6 +53,9 @@ btn_links.addEventListener('click', () => {
     links.push({nombre, url})
     guardarLocalStorage(links)
     renderLinks()
+
+    input_nombre_area.value = '';
+    input_link_area.value = '';
 })
 
 renderLinks();
@@ -57,7 +69,7 @@ const borrarLinks = (indiceBorrar) => {
     renderLinks();
 };
 
-window.borrarLinks = borrarLinks;
+// window.borrarLinks = borrarLinks;
 
 // Función para imágenes de fondo
 
